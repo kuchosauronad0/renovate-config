@@ -1,0 +1,28 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Upgrades the `rust-version` field in the `Cargo.toml` file",
+  "packageRules": [
+    {
+      "commitMessageTopic": "Rust",
+      "matchManagers": [
+        "regex"
+      ],
+      "matchPackageNames": [
+        "rust"
+      ]
+    }
+  ],
+  "regexManagers": [
+    {
+      "datasourceTemplate": "github-releases",
+      "depNameTemplate": "rust",
+      "fileMatch": [
+        "^Cargo\\.toml?$"
+      ],
+      "lookupNameTemplate": "rust-lang/rust",
+      "matchStrings": [
+        "rust-version\\s*=\\s*\"(?<currentValue>\\d+\\.\\d+(\\.\\d+)?)\""
+      ]
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+env:
+  LOG_LEVEL: debug
+
+jobs:
+  validate-preset:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    strategy:
+      matrix:
+        file:
+          - rust/*.json
+
+    env:
+      RENOVATE_CONFIG_FILE: ${{ matrix.file }}
+
+    steps:
+      - uses: actions/checkout@2541b1294d2704b0964813337f33b291d3f8596b
+
+      - name: testing ${{ matrix.file }}
+        run: npx -p renovate renovate-config-validator
