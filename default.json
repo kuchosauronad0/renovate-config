@@ -3,7 +3,11 @@
   "dependencyDashboard": true,
   "dependencyDashboardAutoclose": true,
   "extends": [
-    "config:base"
+    "config:base",
+    ":dependencyDashboard",
+    ":maintainLockFilesWeekly",
+    ":prConcurrentLimitNone",
+    ":prHourlyLimitNone"
   ],
   "packageRules": [
     {
