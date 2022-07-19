@@ -17,7 +17,9 @@ jobs:
     strategy:
       matrix:
         file:
-          - rust/*.json
+          - rust/updateChannelInRustToolchainToml.json
+          - rust/updateRustVersionInCargoToml.json
+          - default.json
 
     env:
       RENOVATE_CONFIG_FILE: ${{ matrix.file }}
