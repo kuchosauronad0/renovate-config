@@ -19,10 +19,10 @@
       "fileMatch": [
         "^rust-toolchain\\.toml?$"
       ],
-      "lookupNameTemplate": "rust-lang/rust",
       "matchStrings": [
         "channel\\s*=\\s*\"(?<currentValue>\\d+\\.\\d+(\\.\\d+)?)\""
-      ]
+      ],
+      "packageNameTemplate": "rust-lang/rust"
     }
   ]
 }

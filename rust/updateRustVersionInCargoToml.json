@@ -19,10 +19,10 @@
       "fileMatch": [
         "^Cargo\\.toml?$"
       ],
-      "lookupNameTemplate": "rust-lang/rust",
       "matchStrings": [
         "rust-version\\s*=\\s*\"(?<currentValue>\\d+\\.\\d+(\\.\\d+)?)\""
-      ]
+      ],
+      "packageNameTemplate": "rust-lang/rust"
     }
   ]
 }
