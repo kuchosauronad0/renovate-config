@@ -5,16 +5,17 @@
   "platformAutomerge": true,
   "extends": [
     "config:base",
-    ":rebaseStalePrs",
-    ":dependencyDashboard",
     ":maintainLockFilesWeekly",
+    ":rebaseStalePrs",
+    ":semanticCommits",
+    ":semanticCommitScope(deps)",
+    "docker:enableMajor",
+    "docker:pinDigests",
     ":prConcurrentLimitNone",
     ":prHourlyLimitNone",
     "helpers:pinGitHubActionDigests"
   ],
-  "docker": {
-    "pinDigests": true,
-  },
+  "internalChecksFilter": "strict",
   "packageRules": [
     {
       "automerge": true,
