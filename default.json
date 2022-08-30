@@ -8,7 +8,8 @@
     ":dependencyDashboard",
     ":maintainLockFilesWeekly",
     ":prConcurrentLimitNone",
-    ":prHourlyLimitNone"
+    ":prHourlyLimitNone",
+    "helpers:pinGitHubActionDigests",
   ],
   "packageRules": [
     {
