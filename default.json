@@ -2,6 +2,7 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "dependencyDashboard": true,
   "dependencyDashboardAutoclose": true,
+  "platformAutomerge": true,
   "extends": [
     "config:base",
     ":dependencyDashboard",
