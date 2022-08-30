@@ -5,7 +5,7 @@
   "platformAutomerge": true,
   "extends": [
     "config:base",
-    ":rebaseStalePrs"
+    ":rebaseStalePrs",
     ":dependencyDashboard",
     ":maintainLockFilesWeekly",
     ":prConcurrentLimitNone",
