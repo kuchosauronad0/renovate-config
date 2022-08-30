@@ -5,11 +5,12 @@
   "platformAutomerge": true,
   "extends": [
     "config:base",
+    ":rebaseStalePrs"
     ":dependencyDashboard",
     ":maintainLockFilesWeekly",
     ":prConcurrentLimitNone",
     ":prHourlyLimitNone",
-    "helpers:pinGitHubActionDigests",
+    "helpers:pinGitHubActionDigests"
   ],
   "packageRules": [
     {
