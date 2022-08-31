@@ -9,12 +9,16 @@
     ":rebaseStalePrs",
     ":semanticCommits",
     ":semanticCommitScope(deps)",
+    ":rebasestaleprs",
     "docker:enableMajor",
     "docker:pinDigests",
     ":prConcurrentLimitNone",
     ":prHourlyLimitNone",
     "helpers:pinGitHubActionDigests"
   ],
+  "lockFileMaintenance": {
+    "automerge": true
+  },
   "internalChecksFilter": "strict",
   "packageRules": [
     {
@@ -42,6 +46,5 @@
       ]
     }
   ],
-  "rangeStrategy": "replace",
-  "rebaseWhen": "behind-base-branch"
+  "rangeStrategy": "replace"
 }
