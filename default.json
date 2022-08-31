@@ -9,7 +9,6 @@
     ":rebaseStalePrs",
     ":semanticCommits",
     ":semanticCommitScope(deps)",
-    ":rebasestaleprs",
     "docker:enableMajor",
     "docker:pinDigests",
     ":prConcurrentLimitNone",
