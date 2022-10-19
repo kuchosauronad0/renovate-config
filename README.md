@@ -5,7 +5,7 @@
 ```json
 {
   "extends": [
-    "github>kristof-mattei/renovate-config"
+    "github>kuchosauronad0/renovate-config"
   ]
 }
 ```
